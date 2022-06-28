@@ -496,4 +496,7 @@ color: hsl(176, 72%, 28%);
  background-color: #fff;
  border: 1px solid hsl(176, 72%, 28%) ;
 }
+li{
+  cursor: pointer;
+}
 }
