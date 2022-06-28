@@ -163,29 +163,53 @@ selectRewardBtn.forEach((element) => {
   // console.log(reward)
   element.addEventListener("click", (e) => {
     e.preventDefault();
-    //console.log("p");
-    let getRadioButton, radioIndex;
-    if (element) {
-      radioIndex = element.id;
-      project();
-      getRadioButton = radioBtn[radioIndex];
+   // console.log(element.dataset.action);
 
-      getRadioButton.checked = true;
-      getRadioButton.scrollIntoView();
-      getRadioButton.parentElement.parentElement.parentElement.classList.add("box-bordercolor");
-      getRadioButton.parentElement.parentElement.nextElementSibling.classList.add("block");
-    } else {
-      getRadioButton.parentElement.parentElement.parentElement.classList.remove("box-bordercolor");
-      getRadioButton.parentElement.parentElement.nextElementSibling.classList.remove(
-        "block"
-      );
-    }
+   let getRadioButton
+    
+   radioBtn.forEach(btn => {
+       console.log(element.value)
+       if (element.dataset.action === btn.value) {
+         project();
+         getRadioButton = btn;
+console.log(getRadioButton)
+         getRadioButton.checked = true;
+
+        getRadioButton.scrollIntoView();
+         getRadioButton.parentElement.parentElement.parentElement.classList.add(
+           "box-bordercolor"
+         );
+         getRadioButton.parentElement.parentElement.nextElementSibling.classList.add(
+           "block"
+         );
+       } 
+       else if(element.dataset.action !== btn.value) {
+        console.log("pass")
+        console.log(btn);
+        btn.parentElement.parentElement.parentElement.classList.remove(  "box-bordercolor" );
+        btn.parentElement.parentElement.nextElementSibling.classList.remove( "block");
+       }
+    });
+    
+    // if (element) {
+    //   radioIndex = element.id;
+
+    //   project();
+    //   getRadioButton = radioBtn[radioIndex];
+
+    //   getRadioButton.checked = true;
+    //   getRadioButton.scrollIntoView();
+    //   getRadioButton.parentElement.parentElement.parentElement.classList.add("box-bordercolor");
+    //   getRadioButton.parentElement.parentElement.nextElementSibling.classList.add("block");
+    // } else {
+    //   getRadioButton.parentElement.parentElement.parentElement.classList.remove("box-bordercolor");
+    //   getRadioButton.parentElement.parentElement.nextElementSibling.classList.remove(
+    //     "block"
+    //   );
+    // }
   });
 });
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-  
-}
+
 
 const bookmark = document.querySelector(".book-box");
 
