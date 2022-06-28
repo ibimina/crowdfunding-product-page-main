@@ -53,7 +53,7 @@ Users should be able to:
 
 
 ### What I learned
-
+DOM manipulation
 
 This function displays the pledge page and activate the active state of the pledge box
 
