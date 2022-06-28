@@ -72,6 +72,7 @@ function checkRadioBtnClick() {
       backedProjectPage.removeAttribute("data-visible", false);
       btn.checked = false;
       successPage.classList.add("open");
+      successPageBox.scrollIntoView()
     } else {
       btn.parentElement.parentElement.parentElement.classList.remove("box-bordercolor");
       btn.parentElement.parentElement.nextElementSibling.classList.remove("block");
@@ -84,7 +85,7 @@ radioBtn.forEach((element) => {
 });
 
 const successPage = document.querySelector(".success-wrapper");
-
+const successPageBox = document.querySelector(".success-container")
 const quantityLeft = document.querySelectorAll(".quan-id");
 const totalAmountPledge = document.querySelector(".total-amount");
 const totalPeopleBacked = document.querySelector(".total-back");
@@ -145,6 +146,8 @@ processPledge.forEach((element) => {
 
         backedProjectPage.setAttribute("data-visible", false);
         successPage.classList.add("open");
+           successPageBox.scrollIntoView();
+       
       } else {
         enterValidPledgeDisplay.textContent = `Enter $${radioValue} or above`;
       }
