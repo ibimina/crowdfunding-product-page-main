@@ -229,6 +229,7 @@ progress::-webkit-progress-value {
   height: 100%;
   display: block;
 scroll-behavior: 1rem;
+width: 100%;
 
 }
 
@@ -267,7 +268,7 @@ input[type="radio"]{
   background-color: #fff;
   border: 1px solid rgb(228, 222, 222);
   position: relative;
-  
+  cursor: pointer;
 }
 input[type="radio"]::before{
   content: "";
@@ -350,6 +351,7 @@ justify-content: space-around;
   font-size: 14px;
   border-radius: 5px;
   text-align: center;
+
 }
 .active{
  filter:invert(20%)brightness(90%)sepia(98%)hue-rotate(127deg)saturate(386%) contrast(87%);
@@ -360,6 +362,10 @@ justify-content: space-around;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.selection-wrapper h4:hover{
+  color: hsl(176, 72%, 28%);
+  cursor: pointer;
 }
 @media (min-width:70rem) {
   header{
@@ -430,11 +436,8 @@ progress{
   justify-content: space-between;
   align-items: center;
 }
-.selection-wrapper{
-  width: 100%;
-}
-.selection-container{
 
+.selection-container{
   padding: 4rem;
   max-width: 739px;
   margin: auto;
@@ -488,5 +491,9 @@ color: hsl(176, 72%, 28%);
 }
 .reward:hover{
   background-color:  hsl(176, 72%, 28%);
+}
+.btn-wrapp:focus, .btn-wrapp:hover{
+ background-color: #fff;
+ border: 1px solid hsl(176, 72%, 28%) ;
 }
 }
