@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile](Capture81.png)
-![desktop](Capture82.png)
+![mobile](Capture081.png)
+![desktop](Capture082.png)
 
 ### Links
 
