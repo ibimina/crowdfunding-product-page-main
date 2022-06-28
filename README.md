@@ -57,11 +57,11 @@ DOM manipulation
 This function displays the pledge page and activate the active state of the pledge box
 
 ```js
-coselectRewardBtn.forEach((element) => {
-  // console.log(reward)
+selectRewardBtn.forEach((element) => {
+
   element.addEventListener("click", (e) => {
     e.preventDefault();
-   // console.log(element.dataset.action);
+
 
    let getRadioButton
     
@@ -82,8 +82,7 @@ console.log(getRadioButton)
          );
        } 
        else if(element.dataset.action !== btn.value) {
-        console.log("pass")
-        console.log(btn);
+        
         btn.parentElement.parentElement.parentElement.classList.remove(  "box-bordercolor" );
         btn.parentElement.parentElement.nextElementSibling.classList.remove( "block");
        }
@@ -93,13 +92,8 @@ console.log(getRadioButton)
 
 ```
 
-
-
-
 ### Continued development
 DOM Manipulation
-
-
 
 
 ## Author

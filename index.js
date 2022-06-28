@@ -168,11 +168,11 @@ selectRewardBtn.forEach((element) => {
    let getRadioButton
     
    radioBtn.forEach(btn => {
-       console.log(element.value)
+     //  console.log(element.value)
        if (element.dataset.action === btn.value) {
          project();
          getRadioButton = btn;
-console.log(getRadioButton)
+//console.log(getRadioButton)
          getRadioButton.checked = true;
 
         getRadioButton.scrollIntoView();
@@ -184,8 +184,8 @@ console.log(getRadioButton)
          );
        } 
        else if(element.dataset.action !== btn.value) {
-        console.log("pass")
-        console.log(btn);
+        // console.log("pass")
+        // console.log(btn);
         btn.parentElement.parentElement.parentElement.classList.remove(  "box-bordercolor" );
         btn.parentElement.parentElement.nextElementSibling.classList.remove( "block");
        }
