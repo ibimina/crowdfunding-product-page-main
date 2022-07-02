@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ibimina/crowdfunding-product-page-main](https://github.com/ibimina/crowfunding-product-page-main)
-- Live Site URL: [https://ibimina.github.io/crowdfunding-product-page-main/](https://ibimina.github.io/crowfunding-product-page-main/)
+- Solution URL: [https://github.com/ibimina/crowdfunding-product-page-main](https://github.com/ibimina/crowdfunding-product-page-main)
+- Live Site URL: [https://ibimina.github.io/crowdfunding-product-page-main/](https://ibimina.github.io/crowdfunding-product-page-main/)
 
 ## My process
 
